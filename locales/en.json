@@ -1,0 +1,8 @@
+// en.json
+{
+  "siteTitle": "NASA Technical Services",
+  "aboutTitle": "About Us",
+  "contactTitle": "Contact",
+  "faqTitle": "Frequently Asked Questions",
+  // ...
+}

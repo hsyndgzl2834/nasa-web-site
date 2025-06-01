@@ -1,0 +1,8 @@
+// tr.json
+{
+  "siteTitle": "NASA Teknik Hizmetler",
+  "aboutTitle": "Hakkımızda",
+  "contactTitle": "İletişim",
+  "faqTitle": "Sıkça Sorulan Sorular",
+  // ...
+}

@@ -1,0 +1,32 @@
+{
+  "tr": {
+    "siteTitle": "NASA Teknik Hizmetler",
+    "welcome": "Hoşgeldiniz",
+    "welcomeDesc": "NASA Teknik Hizmetler web sitesine hoşgeldiniz.",
+    "services": "Hizmetlerimiz",
+    "products": "Ürünlerimiz",
+    "rights": "© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.",
+    "whatsapp": "📱 WhatsApp",
+    "quote": "📩 Teklif Al"
+  },
+  "en": {
+    "siteTitle": "NASA Technical Services",
+    "welcome": "Welcome",
+    "welcomeDesc": "Welcome to the NASA Technical Services website.",
+    "services": "Our Services",
+    "products": "Our Products",
+    "aboutTitle": "About Us",
+    "aboutDesc": "NASA Technical Services is an engineering company specialized in industrial burner systems. We provide installation, maintenance, and service throughout Turkey.",
+    "contactTitle": "Contact",
+    "contactDesc": "You can use the information below to contact us.",
+    "faqTitle": "Frequently Asked Questions",
+    "faqDesc": "Here you can find the most common questions from our customers.",
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "rights": "© 2025 NASA Technical Services. All rights reserved.",
+    "whatsapp": "📱 WhatsApp",
+    "quote": "📩 Get a Quote"
+  }
+}

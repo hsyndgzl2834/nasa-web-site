@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <base href="/" />
+  <meta name="description" content="NASA Teknik Hizmetler - İletişim"/>
+  <meta name="keywords" content="iletisim, teklif, destek, NASA Teknik"/>
+  <meta name="author" content="NASA Teknik Hizmetler"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <title data-i18n="contactTitle">İletişim</title>
+
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+
+  <!-- Custom CSS -->
+  <link href="/css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-fire-alt me-2"></i>NASA Teknik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="https://wa.me/905316250694" class="btn btn-success me-2 align-items-center"><i class="fab fa-whatsapp me-1"></i>WhatsApp</a>
+          <a href="contact.html" class="btn btn-primary">Teklif Al</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Section -->
+  <main class="container py-5">
+    <div class="text-center mb-5">
+      <h1 data-i18n="contactTitle">İletişim</h1>
+      <p class="text-muted" data-i18n="contactDesc">Bize ulaşmak için formu doldurun veya aşağıdaki bilgileri kullanın.</p>
+    </div>
+    <div class="row">
+      <!-- Form Column -->
+      <div class="col-lg-6 mb-4">
+        <form class="needs-validation" novalidate action="https://formspree.io/f/mvgandne" method="POST" target="_blank">
+          <div class="mb-3">
+            <label for="name" class="form-label" data-i18n="contactName">Adınız Soyadınız</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Adınız Soyadınız" required>
+            <div class="invalid-feedback">Bu alan gerekli.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" data-i18n="contactEmail">E-posta Adresiniz</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="adiguzelhuseyin@outlook.com" required>
+            <div class="invalid-feedback">Geçerli bir e-posta giriniz.</div>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label" data-i18n="contactPhone">Telefon Numaranız</label>
+            <input type="tel" name="phone" class="form-control" id="phone" placeholder="0531 625 0694" required>
+            <div class="invalid-feedback">Telefon numarası gerekli.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label" data-i18n="contactMessage">Mesajınız</label>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Mesajınız..." required></textarea>
+            <div class="invalid-feedback">Mesaj alanı boş bırakılamaz.</div>
+          </div>
+          <button type="submit" class="btn btn-primary" data-i18n="contactSubmit">Gönder</button>
+        </form>
+      </div>
+
+      <!-- Info Column -->
+      <div class="col-lg-6">
+        <div class="mb-4">
+          <h5 data-i18n="contactInfo">İletişim Bilgileri</h5>
+          <p><i class="fas fa-phone-alt me-2"></i>0531 625 0694</p>
+          <p><i class="fab fa-whatsapp me-2"></i>WhatsApp Hattı</p>
+          <p><i class="fas fa-envelope me-2"></i>adiguzelhuseyin@outlook.com</p>
+        </div>
+        <div>
+          <h5 data-i18n="contactLocation">Adresimiz</h5>
+          <p>Kağıthane, İstanbul, Türkiye</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3 mt-4">
+    <p data-i18n="rights">© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function() {
+      'use strict'
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  <script src="/js/language.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="NASA Teknik Hizmetler"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+  <title data-i18n="pageTitle">Page Title</title>
+  <!-- CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet"/>\n  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-fire-alt me-2"></i>NASA Teknik</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <div class="dropdown me-3">
+            <button class="btn btn-outline-light dropdown-toggle" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-globe"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+              <li><button class="dropdown-item" onclick="setLanguage('tr')">Türkçe</button></li>
+              <li><button class="dropdown-item" onclick="setLanguage('en')">English</button></li>
+            </ul>
+          </div>
+          <a href="tel:+905551112233" class="btn btn-success me-2 d-none d-lg-inline-flex align-items-center"><i class="fas fa-phone-alt me-1"></i>0555 111 2233</a>
+          <a href="https://wa.me/905551112233" class="btn btn-success me-2 align-items-center"><i class="fab fa-whatsapp me-1"></i>WhatsApp</a>
+          <a href="contact.html" class="btn btn-primary">Teklif Al</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE TITLE & CONTENT -->
+  <main class="container py-5">
+    <h1 data-i18n="pageTitle">Page Title</h1>
+    <p>Page content goes here.</p>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-3">
+    <p data-i18n="rights">© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.</p>
+  </footer>
+
+  <!-- Sticky Buttons -->
+  <div class="position-fixed bottom-0 end-0 p-3">
+    <a href="https://wa.me/905551112233" class="btn btn-success mb-2 align-items-center"><i class="fab fa-whatsapp me-1"></i>WhatsApp</a>
+    <a href="contact.html" class="btn btn-primary align-items-center">Teklif Al</a>
+  </div>
+
+  <!-- JS Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
