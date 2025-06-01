@@ -208,6 +208,3 @@ foreach ($page in $pages) {
 
   Set-Content -Path $page -Value $content
 }
-
-Write-Host "Migration tamamlandı."
->>>>>>> 5efd24736613dd4df0321dca3f65ba8bda75a11d
