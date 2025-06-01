@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <#
 Migration Script Usage:
 1. Ensure this file (migration_script.ps1) is saved in the same folder as your HTML pages.
