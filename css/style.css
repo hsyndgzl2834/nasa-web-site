@@ -1,50 +1,28 @@
+/* style-full-cleaned.css: Optimize edilmiş ve tekrarsız stil dosyası */
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
   margin: 0;
   padding: 0;
-}
-header, footer {
-  background: #222;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
-}
-.services-section {
-  padding: 2rem;
-  background: #f9f9f9;
-  text-align: center;
-}
-.services-section h2 {
-  margin-bottom: 1rem;
-}
-.card {
-  background: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 2rem;
-  font-size: 1.1rem;
-  text-align: center;
-  min-width: 200px;
-}
-.swiper {
-  padding: 1rem 0;
-}
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.products-section {
-  padding: 2rem;
-  background: #ffffff;
-  text-align: center;
-}
-.products-section h2 {
-  margin-bottom: 1rem;
+  overflow-x: hidden;
 }
 
+h1, h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Navbar */
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background: #222;
@@ -54,363 +32,22 @@ header, footer {
   top: 0;
   z-index: 1000;
 }
+
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
 }
+
 .nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 500;
 }
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background: #222;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hamburger {
-    display: block;
-  }
-}
 
-.lang-switcher {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 2000;
-}
-.lang-btn {
-  background: white;
-  border: 1px solid #ccc;
-  margin-left: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0.3rem 0.6rem;
-}
-
-/* Scroll Animations */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease-out;
-}
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Hover Card Effect */
-.card:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
-}
-
-/* Sticky Contact Buttons */
-.sticky-buttons {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 10000;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.sticky-buttons a {
-  background: #25d366;
-  color: white;
-  padding: 10px 14px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-/* Page Transitions */
-main.fade-in {
-  animation: fadeInUp 0.8s ease forwards;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* General Container Padding */
-main {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-  box-sizing: border-box;
-}
-
-/* Improve section spacing */
-section {
-  margin-bottom: 3rem;
-}
-
-/* Ensure cards display properly */
-.swiper-slide .card {
-  width: 100%;
-  max-width: 300px;
-  margin: auto;
-}
-
-/* Improve typography and spacing */
-h1, h2 {
-  margin-bottom: 1rem;
-}
-
-p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-/* Footer spacing */
-footer {
-  margin-top: 3rem;
-  padding: 1rem;
-  background-color: #222;
-  color: white;
-  text-align: center;
-}
-
-/* Navbar logo alignment */
-.logo {
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
-/* Language switcher inside navbar */
-.lang-switcher {
-  margin-left: auto;
-  display: flex;
-  gap: 5px;
-}
-.lang-btn {
-  background: white;
-  border: 1px solid #ccc;
-  font-size: 0.9rem;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-}
-@media (max-width: 768px) {
-  .lang-switcher {
-    justify-content: center;
-    width: 100%;
-    padding: 0.5rem;
-    background: #222;
-  }
-}
-
-body {
-  background-color: #f4f4f4;
-  color: #333;
-  font-family: 'Inter', sans-serif;
-}
-main {
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
-section {
-  margin-bottom: 4rem;
-}
-.card {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 2rem 1rem;
-  margin-top: 4rem;
-  position: relative;
-}
-.footer-lang {
-  margin-top: 1rem;
-}
-.footer-lang .lang-btn {
-  background: white;
-  border: 1px solid #ccc;
-  font-size: 0.9rem;
-  padding: 0.3rem 0.6rem;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-/* Ensure container fits mobile screens */
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
-
-main {
-  padding: 1rem;
-}
-
-/* Responsive header and nav */
-.navbar {
-  flex-wrap: wrap;
-}
-
-.logo {
-  font-size: 1.2rem;
-  padding: 0.5rem 0;
-}
-
-.nav-links {
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  margin-top: 0.5rem;
-}
-
-.hamburger {
-  display: block;
-  margin-left: auto;
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #222;
-    width: 100%;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .sticky-buttons a {
-    font-size: 0.8rem;
-    padding: 8px 10px;
-  }
-  .card {
-    padding: 1rem;
-    font-size: 0.95rem;
-  }
-}
-
-/* Fix Swiper width on small screens */
-.swiper {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Force hamburger visibility for testing */
-.hamburger {
-  
-}
-
-/* Show hamburger only on mobile */
-.hamburger {
-  display: none;
-}
-
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-}
-
-/* Correct hamburger visibility control */
-.hamburger {
-  display: none;
-}
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-}
-
-/* Modern Typography and Layout */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-main {
-  padding: 3rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-}
-
-section {
-  margin-bottom: 5rem;
-}
-
-/* Modern Card Design */
-.card {
-  background: #ffffff;
-  border-radius: 1.25rem;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-  padding: 2rem;
-  transition: all 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
-}
-
-/* Section Headers */
-h2 {
-  font-size: 2rem;
-  color: #343a40;
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-/* Sticky buttons rounded and aesthetic */
-.sticky-buttons a {
-  border-radius: 100px;
-  padding: 0.8rem 1.5rem;
-  font-weight: bold;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Card Sizing */
-.swiper-slide .card {
-  width: 90%;
-  max-width: 320px;
-  margin: auto;
-}
-
-/* Footer refinement */
-footer {
-  background-color: #212529;
-  color: #dee2e6;
-  padding: 3rem 1rem;
-}
-
-/* Modern hamburger icon using 3 bars */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -421,6 +58,7 @@ footer {
   height: 24px;
   margin-left: auto;
 }
+
 .hamburger span {
   display: block;
   height: 3px;
@@ -428,28 +66,30 @@ footer {
   border-radius: 2px;
   transition: 0.3s;
 }
+
 @media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
   .hamburger {
     display: flex;
   }
+  .lang-switcher {
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem;
+    background: #222;
+  }
 }
 
-/* Logo styling */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.logo img {
-  height: 36px;
-  width: auto;
-}
-.logo-text {
-  color: white;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
+/* Logo */
 .logo img {
   height: 40px;
   width: 40px;
@@ -459,34 +99,223 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
+
 .logo img:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .logo img {
-    height: 36px;
-    width: 36px;
-  }
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  padding: 2rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 200px;
 }
-/* style.css’ın en altında */
-@media (min-width: 992px) {
-  .navbar-expand-lg .navbar-collapse.collapse {
-    display: flex !important;
-    flex-basis: auto;
-  }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
 }
-/* Masaüstünde (992px üzeri) sticky butonları gizle */
-@media (min-width: 992px) {
-  .position-fixed {
-    display: none !important;
+
+.card-body h5 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Swiper */
+.swiper {
+  padding: 1rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide .card {
+  width: 90%;
+  max-width: 320px;
+  margin: auto;
+}
+
+/* Hizmetler Mobil Ortalama */
+@media (max-width: 767px) {
+  .services-swiper .swiper-wrapper {
+    justify-content: center;
+  }
+  .services-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .services-swiper .card {
+    margin: 0 auto;
   }
 }
 
-/* İsteğe bağlı: mobilde biraz yukarı alın, taşmasın diye */
-@media (max-width: 991px) {
-  .position-fixed {
-    bottom: 1.5rem !important;
-    right: 1.5rem !important;
+@media (min-width: 1200px) {
+  .services-swiper .swiper-slide {
+    max-width: 340px;
+  }
+}
+
+/* Sticky Buttons */
+.sticky-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sticky-buttons a {
+  display: inline-block;
+  padding: 8px 12px;
+  color: white;
+  background-color: #198754;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sticky-buttons a.teklif {
+  background-color: #0d6efd;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #dee2e6;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+
+.footer-lang .lang-btn {
+  background: white;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.6rem;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Scroll Animasyon */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Görseller */
+img, picture, source {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.banner-image {
+  width: 100vw;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 768px) {
+  .banner-image {
+    height: 30vh;
+  }
+}
+
+/* Hero Slider */
+#hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  max-height: 500px;
+}
+
+.carousel-caption {
+  bottom: 20%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.4);
+  padding: 1rem;
+  border-radius: 8px;
+  text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.carousel-item:nth-child(3) .carousel-caption {
+  bottom: 25%;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #fff;
+}
+/* Swiper kartlarının mobilde kaybolmasını önlemek için düzeltme */
+.services-swiper .swiper-wrapper {
+  flex-wrap: nowrap;
+}
+
+.services-swiper .swiper-slide {
+  flex-shrink: 0;
+  width: auto;
+}
+
+/* Mobilde genişlik sınırlaması */
+@media (max-width: 767px) {
+  .services-swiper .swiper-slide {
+    min-width: 260px;
+    max-width: 90%;
+  }
+  .services-swiper .swiper-wrapper {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .services-swiper .swiper-wrapper {
+    justify-content: center;
+  }
+
+  .services-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-swiper .card {
+    margin: 0 auto;
   }
 }
