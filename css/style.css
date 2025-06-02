@@ -319,3 +319,16 @@ img, picture, source {
     margin: 0 auto;
   }
 }
+<!-- Sayfa açılış efekti için CSS -->
+<style>
+  body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  body.loaded {
+    opacity: 1;
+  }
+</style>
+
+<!-- Kart animasyonları için AOS kütüphanesi -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
