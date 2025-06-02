@@ -55,7 +55,7 @@
     <div class="row">
       <!-- Form Column -->
       <div class="col-lg-8 mb-4">
-        <form action="https://formspree.io/f/mvgandne" method="POST" class="needs-validation" novalidate target="_blank">
+        <form id="teklifForm" class="needs-validation" novalidate>
           <div class="mb-3">
             <label class="form-label" for="firma">Firma Adı</label>
             <input type="text" class="form-control" id="firma" name="firma" placeholder="Firma Adınızı Girin" required />
@@ -126,6 +126,46 @@
         }, false)
       })
     })()
+  </script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("teklifForm");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+          return;
+        }
+
+        const formData = new FormData(form);
+        const formJson = JSON.stringify(Object.fromEntries(formData.entries()));
+
+        try {
+          const response = await fetch("https://formspree.io/f/mvgandne", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: formJson
+          });
+
+          if (response.ok) {
+            form.reset();
+            form.classList.remove('was-validated');
+            alert("✅ Mesajınız başarıyla iletildi!");
+          } else {
+            alert("⚠️ Mesaj gönderilemedi. Lütfen tekrar deneyin.");
+          }
+        } catch (error) {
+          alert("🚫 Bağlantı hatası! Lütfen internetinizi kontrol edin.");
+        }
+      });
+    });
   </script>
 </body>
 </html>
