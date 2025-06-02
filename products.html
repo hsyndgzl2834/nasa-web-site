@@ -10,13 +10,34 @@
   <meta name="keywords" content="brülör, monoblok, duoblok, gaz valfi, multiblok, prosesstat, teknik ürünler, NASA Teknik" />
   <meta name="author" content="NASA Teknik Hizmetler" />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.nasa-teknik.com/products.html" />
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="Ürünlerimiz | NASA Teknik Hizmetler" />
   <meta property="og:description" content="Endüstriyel brülör ve ekipman seçeneklerimizle tanışın." />
-  <meta property="og:image" content="images/hero1.webp" />
+  <meta property="og:image" content="https://www.nasa-teknik.com/images/hero1.webp" />
   <meta property="og:url" content="https://www.nasa-teknik.com/products.html" />
+  <meta property="og:locale" content="tr_TR" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="alternate" hreflang="tr" href="https://www.nasa-teknik.com/products.html" />
   <link rel="alternate" hreflang="en" href="https://www.nasa-teknik.com/en/products.html" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Ürünlerimiz | NASA Teknik Hizmetler",
+    "url": "https://www.nasa-teknik.com/products.html",
+    "description": "Endüstriyel brülörler ve tamamlayıcı otomasyon ekipmanları. Monoblok, duoblok brülörler ve güvenlik bileşenlerini keşfedin.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.nasa-teknik.com/index.html" },
+        { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://www.nasa-teknik.com/products.html" }
+      ]
+    }
+  }
+  </script>
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -24,8 +45,17 @@
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
+  <style>
+    body { overflow-x: hidden; }
+    .product-section { padding-top: 60px; padding-bottom: 60px; }
+    .product-section h1, .product-section h2 { letter-spacing: 0.5px; }
+    .card:hover { transform: translateY(-5px); transition: transform 0.3s ease; }
+    .card-title { font-size: 1.25rem; }
+    .card-img-top { height: 250px; object-fit: cover; }
+    .section-heading { margin-bottom: 30px; }
+    .brulor-cards .card { margin-bottom: 20px; }
+  </style>
 </head>
 <body>
 
@@ -52,85 +82,83 @@
   </div>
 </nav>
 
-<!-- Brülör Tipleri -->
-<main class="container py-5">
-  <section class="mb-5">
-    <div class="text-center mb-4">
-      <h1 class="fw-bold">Brülör Tipleri</h1>
-      <p class="text-muted">Endüstriyel ihtiyaçlarınıza uygun yüksek performanslı brülör seçeneklerimiz</p>
+<main class="container product-section">
+  <!-- Hero Section -->
+  <div class="row mb-5">
+    <div class="col text-center">
+      <h1 class="display-5 fw-bold">Ürünlerimiz</h1>
+      <p class="lead text-muted">Endüstriyel brülör ve otomasyon ekipmanlarımızı keşfedin</p>
     </div>
+  </div>
 
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <!-- Slide 1 -->
-        <div class="swiper-slide">
-          <div class="card h-100 border-0 shadow-sm rounded-4">
-            <img src="images/product1.jpg" class="card-img-top rounded-top-4" alt="Monoblok Brülör" />
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">Monoblok Brülör</h5>
-              <p class="card-text text-muted">Kompakt yapısıyla yer tasarrufu sağlar. Bakımı kolay, kurulumu hızlıdır.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Slide 2 -->
-        <div class="swiper-slide">
-          <div class="card h-100 border-0 shadow-sm rounded-4">
-            <img src="images/product2.jpg" class="card-img-top rounded-top-4" alt="Duoblok Brülör" />
-            <div class="card-body">
-              <h5 class="card-title fw-semibold">Duoblok Brülör</h5>
-              <p class="card-text text-muted">Büyük kapasiteli sistemler için uygundur. Yakıt-hava oranı hassas şekilde ayarlanabilir.</p>
-            </div>
+  <!-- Brülör Tipleri Section (Vertical Cards) -->
+  <section class="mb-5">
+    <div class="text-center section-heading">
+      <h2 class="fw-bold">Brülör Tipleri</h2>
+      <p class="text-muted">İhtiyacınıza göre tasarlanmış yüksek performanslı brülörler</p>
+    </div>
+    <div class="row brulor-cards">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm rounded-4 border-0">
+          <img src="images/product1.webp" class="card-img-top rounded-top-4" alt="Monoblok Brülör" loading="lazy" width="400" height="250" />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Monoblok Brülör</h5>
+            <p class="card-text text-muted">Kompakt yapısıyla yer tasarrufu sağlar. Kolay bakım ve hızlı kurulum imkanı sunar. Küçük ve orta ölçekli tesisler için ideal performans.</p>
           </div>
         </div>
       </div>
-
-      <!-- Swiper Controls -->
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm rounded-4 border-0">
+          <img src="images/product2.webp" class="card-img-top rounded-top-4" alt="Duoblok Brülör" loading="lazy" width="400" height="250" />
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Duoblok Brülör</h5>
+            <p class="card-text text-muted">Yüksek kapasiteli sistemler için tasarlanmıştır. Yakıt-hava karışımının hassas ayarını yaparak yüksek verimlilik ve düşük emisyon sağlar. Büyük endüstriyel tesislerde güvenle kullanılır.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Otomasyon ve Güvenlik Parçaları -->
-  <section>
-    <div class="text-center mb-4">
+  <!-- Güvenlik ve Kontrol Ekipmanları Section -->
+  <section class="mb-5">
+    <div class="text-center section-heading">
       <h2 class="fw-bold">Güvenlik ve Kontrol Ekipmanları</h2>
-      <p class="text-muted">Brülör sistemlerini tamamlayan önemli komponentler</p>
+      <p class="text-muted">Brülör sistemlerinizi tamamlayan güvenlik parçaları</p>
     </div>
-
     <div class="row g-4">
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
         <div class="card h-100 shadow-sm rounded-4 border-0">
-          <div class="card-body">
+          <div class="card-body text-center">
+            <i class="fas fa-fire-extinguisher fa-2x mb-3 text-primary"></i>
             <h5 class="card-title">Gaz Kaçak Valfi</h5>
-            <p class="card-text text-muted">Gaz hattında sızıntı kontrolü sağlar. Otomatik kapanarak güvenliği arttırır.</p>
+            <p class="card-text text-muted">Gaz hattındaki sızıntıyı tespit eder ve otomatik olarak kapatarak güvenliği sağlar. EN uyumludur.</p>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
         <div class="card h-100 shadow-sm rounded-4 border-0">
-          <div class="card-body">
+          <div class="card-body text-center">
+            <i class="fas fa-tachometer-alt fa-2x mb-3 text-primary"></i>
             <h5 class="card-title">Prosesstat</h5>
-            <p class="card-text text-muted">Baca çekişi, su basıncı, hava akışı gibi parametreleri denetler. Sistem emniyetini kontrol eder.</p>
+            <p class="card-text text-muted">Baca çekişi, su basıncı ve hava akışı gibi parametreleri kontrol ederek sistem emniyetini sağlar. Kolay montaj ve ayar.</p>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
         <div class="card h-100 shadow-sm rounded-4 border-0">
-          <div class="card-body">
+          <div class="card-body text-center">
+            <i class="fas fa-lock fa-2x mb-3 text-primary"></i>
             <h5 class="card-title">Emniyet Kapama Valfi</h5>
-            <p class="card-text text-muted">Sistem arızalarında otomatik olarak gaz geçişini durdurur. Acil durum güvenliği sağlar.</p>
+            <p class="card-text text-muted">Herhangi bir arıza durumunda gaz hattını otomatik olarak kapatarak acil güvenlik sağlar. Dayanıklı ve uzun ömürlüdür.</p>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4">
         <div class="card h-100 shadow-sm rounded-4 border-0">
-          <div class="card-body">
+          <div class="card-body text-center">
+            <i class="fas fa-cogs fa-2x mb-3 text-primary"></i>
             <h5 class="card-title">Multiblok</h5>
-            <p class="card-text text-muted">Gaz regülatörü, filtre, solenoid valf ve kaçak kontrolünü tek gövdede sunar. Kompakt ve güvenli çözüm.</p>
+            <p class="card-text text-muted">Regülatör, filtre, solenoid valf ve kaçak kontrolünü tek gövdede sunan kompakt ve güvenli çözüm. Kolay bakım avantajı sağlar.</p>
           </div>
         </div>
       </div>
@@ -140,24 +168,12 @@
 
 <!-- Footer -->
 <footer class="bg-dark text-light text-center py-3 mt-5">
-  <p class="mb-0">© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.</p>
+  <div class="container">
+    <p class="mb-0">© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.</p>
+  </div>
 </footer>
 
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
-<script defer>
-  const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop: true,
-    pagination: { el: '.swiper-pagination', clickable: true },
-    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-    breakpoints: {
-      768: { slidesPerView: 2 },
-      1024: { slidesPerView: 3 }
-    }
-  });
-</script>
 </body>
 </html>
