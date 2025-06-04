@@ -263,30 +263,7 @@
     AOS.init({ once: true });
   </script>
 
-  <!-- i18next JS ve dinleyiciler -->
-  <script>
-    i18next
-      .use(i18nextHttpBackend)
-      .use(i18nextBrowserLanguageDetector)
-      .init({
-        debug: false,
-        fallbackLng: 'tr',
-        backend: { loadPath: 'locales/{{lng}}.json' }
-      }, function(err, t) {
-        updateContent();
-      });
-
-    function updateContent() {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        el.innerHTML = i18next.t(key);
-      });
-    }
-
-    i18next.on('languageChanged', () => updateContent());
-    document.getElementById('btn-tr').addEventListener('click', () => i18next.changeLanguage('tr'));
-    document.getElementById('btn-en').addEventListener('click', () => i18next.changeLanguage('en'));
-  </script>
+  <script src="js/i18n.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>

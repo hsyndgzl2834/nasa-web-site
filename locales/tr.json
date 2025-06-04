@@ -1,6 +1,8 @@
 {
   "siteTitle": "NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri",
   "brand": "NASA Teknik",
+  "aboutTitle": "Hakkımızda",
+  "aboutDesc": "NASA Teknik Hizmetler, endüstriyel brülör sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Türkiye genelinde kurulum, bakım ve servis hizmetleri sunar.",
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",

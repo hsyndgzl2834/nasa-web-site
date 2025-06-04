@@ -1,9 +1,28 @@
 
 {
   "siteTitle": "NASA Technical Services",
+  "brand": "NASA Technical",
   "aboutTitle": "About Us",
+  "aboutDesc": "NASA Technical Services is an engineering company specialized in industrial burner systems. We provide installation, maintenance and service across Turkey.",
   "contactTitle": "Contact",
   "faqTitle": "Frequently Asked Questions",
+
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "contact": "Contact"
+  },
+
+  "btn": {
+    "whatsapp": "WhatsApp",
+    "quote": "Get a Quote"
+  },
+
+  "hero": {
+    "title": "Expert Service in Industrial Burner Systems",
+    "subtitle": "Reliable installation, maintenance and spare parts service across Turkey"
+  },
   
 
   "services": {
@@ -31,5 +50,8 @@
       "title": "Spare Parts Supply",
       "desc": "We provide original burner spare parts to keep your operations uninterrupted."
     }
+  },
+  "footer": {
+    "copy": "© 2025 NASA Technical Services. All rights reserved."
   }
 }
