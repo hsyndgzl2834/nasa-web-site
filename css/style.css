@@ -319,16 +319,25 @@ img, picture, source {
     margin: 0 auto;
   }
 }
-<!-- Sayfa açılış efekti için CSS -->
-<style>
-  body {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  body.loaded {
-    opacity: 1;
-  }
-</style>
+  
 
-<!-- Kart animasyonları için AOS kütüphanesi -->
-<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  .language-switch {
+    gap: 0.4rem; /* Bayraklar arasındaki boşluk */
+  }
+
+/* Ortak bayrak kapsayıcısı */
+.lang-flag {
+  display: inline-block;
+  width: 300px;        /* 30×30 px boyut */
+  height: 300px;
+  border-radius: 50%; /* Tam yuvarlak */
+  overflow: hidden;
+  border: 2px solid transparent; /* Aktif olmayan için şeffaf kenar */
+  transition: border-color 0.2s, transform 0.2s;
+}
+.lang-flag img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

@@ -1,8 +1,35 @@
-// en.json
+
 {
   "siteTitle": "NASA Technical Services",
   "aboutTitle": "About Us",
   "contactTitle": "Contact",
   "faqTitle": "Frequently Asked Questions",
-  // ...
+  
+
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Professional solutions for your industrial needs"
+  },
+  "service": {
+    "maintenance": {
+      "title": "Annual Periodic Maintenance",
+      "desc": "We offer comprehensive annual maintenance and inspection services to ensure maximum safety and efficiency in your facility."
+    },
+    "installation": {
+      "title": "Burner Installation",
+      "desc": "Expert burner installation services for new facilities and seamless system integration."
+    },
+    "automation": {
+      "title": "Automation Systems",
+      "desc": "SCADA, PLC, and remote-access enabled combustion control automation solutions."
+    },
+    "energy": {
+      "title": "Energy Efficiency",
+      "desc": "We analyze your systems to develop solutions that help you save energy."
+    },
+    "spares": {
+      "title": "Spare Parts Supply",
+      "desc": "We provide original burner spare parts to keep your operations uninterrupted."
+    }
+  }
 }

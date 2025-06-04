@@ -1,8 +1,47 @@
-// tr.json
 {
-  "siteTitle": "NASA Teknik Hizmetler",
-  "aboutTitle": "Hakkımızda",
-  "contactTitle": "İletişim",
-  "faqTitle": "Sıkça Sorulan Sorular",
-  // ...
+  "siteTitle": "NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri",
+  "brand": "NASA Teknik",
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "products": "Ürünler",
+    "contact": "İletişim"
+  },
+  "btn": {
+    "whatsapp": "WhatsApp",
+    "quote": "Teklif Al"
+  },
+  "hero": {
+    "title": "Endüstriyel Brülör Sistemlerinde Uzman Hizmet",
+    "subtitle": "Türkiye genelinde güvenilir kurulum, bakım ve yedek parça hizmeti"
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Endüstriyel ihtiyaçlarınıza yönelik profesyonel çözümler"
+  },
+  "service": {
+    "maintenance": {
+      "title": "Yıllık Periyodik Bakım",
+      "desc": "Tesisinizde maksimum güvenlik ve verimlilik için kapsamlı yıllık bakım ve kontrol hizmetleri."
+    },
+    "installation": {
+      "title": "Brülör Kurulumu",
+      "desc": "Yeni tesis kurulumları ve sistem entegrasyonları için uzman brülör montaj hizmetleri."
+    },
+    "automation": {
+      "title": "Otomasyon Sistemleri",
+      "desc": "SCADA, PLC ve uzaktan erişim destekli yakma kontrol otomasyon çözümleri."
+    },
+    "energy": {
+      "title": "Enerji Verimliliği",
+      "desc": "Sistemlerinizi analiz ederek enerji tasarrufu sağlayacak çözümler geliştiriyoruz."
+    },
+    "spares": {
+      "title": "Yedek Parça Temini",
+      "desc": "Orijinal brülör yedek parçaları ile kesintisiz operasyon sağlıyoruz."
+    }
+  },
+  "footer": {
+    "copy": "© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır."
+  }
 }
