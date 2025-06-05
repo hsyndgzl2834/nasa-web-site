@@ -1,41 +1,99 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="NASA Teknik Hizmetler: Endüstriyel brülör sistemleri, otomasyon çözümleri ve profesyonel teknik servis hizmetleri. Türkiye geneli kurulum, bakım ve yedek parça temini."/>
-  <meta name="keywords" content="endüstriyel brülör, brülör sistemleri, otomasyon, teknik servis, enerji verimliliği, yedek parça, bakım hizmeti"/>
-  <meta name="author" content="NASA Teknik Hizmetler"/>
-  <meta name="robots" content="index, follow"/>
-  <meta property="og:title" content="NASA Teknik Hizmetler"/>
-  <meta property="og:description" content="Endüstriyel brülör sistemlerinde uzmanlaşmış teknik çözümler."/>
-  <meta property="og:image" content="images/hero1.webp"/>
-  <meta property="og:url" content="https://www.nasa-teknik.com"/>
-  <meta name="twitter:card" content="summary_large_image"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ========= META ========= -->
+  <title data-i18n="siteTitle">NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri</title>
+  <meta name="description" content="NASA Teknik Hizmetler: Endüstriyel brülör sistemleri, otomasyon çözümleri ve profesyonel teknik servis hizmetleri. Türkiye geneli kurulum, bakım ve yedek parça temini." />
+  <meta name="keywords" content="endüstriyel brülör, brülör sistemleri, otomasyon, teknik servis, enerji verimliliği, yedek parça, bakım hizmeti" />
+  <meta name="author" content="NASA Teknik Hizmetler" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.nasa-teknik.com/" />
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri" />
+  <meta property="og:description" content="Endüstriyel brülör sistemlerinde uzmanlaşmış teknik çözümler." />
+  <meta property="og:image" content="https://www.nasa-teknik.com/images/hero1.webp" />
+  <meta property="og:url" content="https://www.nasa-teknik.com/" />
+  <meta property="og:site_name" content="NASA Teknik Hizmetler" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri" />
+  <meta name="twitter:description" content="Endüstriyel brülör sistemlerinde uzmanlaşmış teknik çözümler." />
+  <meta name="twitter:image" content="https://www.nasa-teknik.com/images/hero1.webp" />
+
+  <!-- Tema rengi -->
+  <meta name="theme-color" content="#0d1b2a" />
+
+  <!-- ========= CSS ========= -->
   <link href="css/style.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 
-  <title data-i18n="siteTitle">NASA Teknik Hizmetler | Endüstriyel Brülör Sistemleri</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <!-- Custom CSS -->
-  <link href="css/style.css" rel="stylesheet"/>
-  <!-- Animate.css -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
-  <!-- i18next -->
-  <script src="https://unpkg.com/i18next@23.6.1/dist/umd/i18next.min.js"></script>
-  <script src="https://unpkg.com/i18next-http-backend@1.4.3/dist/umd/i18nextHttpBackend.min.js"></script>
-  <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.5/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+  <!-- JSON-LD (Örnek: Kurumsal) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NASA Teknik Hizmetler",
+    "url": "https://www.nasa-teknik.com/",
+    "logo": "https://www.nasa-teknik.com/images/logo.png",
+    "sameAs": [
+      "https://www.facebook.com/nasateknik",
+      "https://www.linkedin.com/company/nasa-teknik"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+90-531-625-0694",
+      "contactType": "customer service",
+      "areaServed": "TR"
+    }
+  }
+  </script>
+  <!-- ========= /CSS ========= -->
+  <style>
+    /* Hero Slider Üzerindeki Sabit Çağrı Butonu */
+    #hero {
+      position: relative;
+    }
+    .hero-cta-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      width: 100%;
+      text-align: center;
+    }
+    .hero-cta-container .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.8rem;
+      border-radius: 0.25rem;
+    }
+    @media (max-width: 768px) {
+      .hero-cta-container {
+        top: 60%;
+      }
+      .hero-cta-container .btn {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.7rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- ========= NAVBAR (Dil butonları burada) ========= -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
         <i class="fas fa-fire-alt me-2"></i><span data-i18n="brand">NASA Teknik</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
@@ -44,11 +102,14 @@
           <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="nav.about">Hakkımızda</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html" data-i18n="nav.products">Ürünler</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html" data-i18n="nav.contact">İletişim</a></li>
-          <li class="nav-item"><a class="nav-link" href="faq.html">SSS</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html" data-i18n="nav.faq">SSS</a></li>
         </ul>
         <div class="d-flex align-items-center">
-          <button id="btn-tr" class="btn btn-sm btn-outline-light me-2 lang-btn">TR</button>
-          <button id="btn-en" class="btn btn-sm btn-outline-light me-3 lang-btn">EN</button>
+          <!-- Dil Butonları -->
+          <button id="btn-tr" class="btn btn-sm btn-outline-light me-2 lang-btn" data-lang="tr">TR</button>
+          <button id="btn-en" class="btn btn-sm btn-outline-light me-3 lang-btn" data-lang="en">EN</button>
+
+          <!-- WhatsApp ve Teklif Al Butonları -->
           <a class="btn btn-success me-2 d-flex align-items-center py-1 px-2" href="https://wa.me/905316250694">
             <i class="fab fa-whatsapp me-1"></i><span data-i18n="btn.whatsapp">WhatsApp</span>
           </a>
@@ -57,256 +118,156 @@
       </div>
     </div>
   </nav>
+  <!-- ========= /NAVBAR ========= -->
 
-  <!-- HERO SLIDER -->
-  <section id="hero">
-    <div class="carousel slide carousel-fade" data-bs-interval="4000" data-bs-ride="carousel" id="heroCarousel">
+  <!-- ========= HERO SLIDER ========= -->
+  <section id="hero" class="position-relative">
+    
+    <div
+      id="heroCarousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="4000"
+    >
       <div class="carousel-indicators">
-        <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#heroCarousel" type="button"></button>
-        <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#heroCarousel" type="button"></button>
-        <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#heroCarousel" type="button"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
+
       <div class="carousel-inner">
+        <!-- 1. Slide -->
         <div class="carousel-item active">
           <picture>
-            <source srcset="images/hero1.webp" type="image/webp"/>
-            <img alt="Hero 1" class="d-block w-100" loading="lazy" src="images/hero1.jpg" style="object-fit:cover; max-height:500px;"/>
+            <source srcset="images/hero1.webp" type="image/webp" />
+            <img src="images/hero1.jpg" alt="Hero 1" class="d-block w-100" loading="lazy" style="object-fit:cover; max-height:500px;" />
           </picture>
-          <div class="carousel-caption d-block text-center">
-            <h5 class="animate__animated animate__fadeInDown" data-i18n="hero.title">Endüstriyel Brülör Sistemlerinde Uzman Hizmet</h5>
+          <div class="carousel-caption text-center">
+            <h1 class="animate__animated animate__fadeInDown" data-i18n="hero.title">Endüstriyel Brülör Sistemlerinde Uzman Hizmet</h1>
             <p class="animate__animated animate__fadeInUp" data-i18n="hero.subtitle">Türkiye genelinde güvenilir kurulum, bakım ve yedek parça hizmeti</p>
-            <a href="products.html" class="btn btn-primary btn-lg mt-4 animate__animated animate__pulse animate__infinite" data-i18n="hero.btnVisit">Ürünlerimizi Keşfedin <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="products.html" class="btn btn-outline-light btn-sm mt-4" data-i18n="hero.btnVisit">Ürünler <i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
+
+        <!-- 2. Slide -->
         <div class="carousel-item">
           <picture>
-            <source srcset="images/hero2.webp" type="image/webp"/>
-            <img alt="Hero 2" class="d-block w-100" loading="lazy" src="images/hero2.jpg" style="object-fit:cover; max-height:500px;"/>
+            <source srcset="images/hero2.webp" type="image/webp" />
+            <img src="images/hero2.jpg" alt="Hero 2" class="d-block w-100" loading="lazy" style="object-fit:cover; max-height:500px;" />
           </picture>
-          <div class="carousel-caption d-block text-center">
-            <h5 class="animate__animated animate__fadeInDown" data-i18n="hero.energyTitle">Enerji Verimliliği</h5>
+          <div class="carousel-caption text-center">
+            <h2 class="animate__animated animate__fadeInDown" data-i18n="hero.energyTitle">Enerji Verimliliği</h2>
             <p class="animate__animated animate__fadeInUp" data-i18n="hero.energyDesc">Yüksek performanslı sistem çözümleri.</p>
-            <a href="products.html" class="btn btn-primary btn-lg mt-4 animate__animated animate__pulse animate__infinite" data-i18n="hero.btnVisit">Ürünlerimizi Keşfedin <i class="fas fa-arrow-right ms-2"></i></a>
+            <a href="products.html" class="btn btn-outline-light btn-sm mt-4" data-i18n="hero.btnVisit">Ürünler <i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
+
+        <!-- 3. Slide -->
         <div class="carousel-item">
           <picture>
-            <source srcset="images/hero3.webp" type="image/webp"/>
-            <img alt="Hero 3" class="d-block w-100" loading="lazy" src="images/hero3.jpg" style="object-fit:cover; max-height:500px;"/>
+            <source srcset="images/hero3.webp" type="image/webp" />
+            <img src="images/hero3.jpg" alt="Hero 3" class="d-block w-100" loading="lazy" style="object-fit:cover; max-height:500px;" />
           </picture>
-          <div class="carousel-caption d-block text-center">
-            <h5 class="animate__animated animate__fadeInDown" data-i18n="hero.supportTitle">Uzman Teknik Destek</h5>
-            <p class="animate__animated animate__fadeInUp" data-i18n="hero.supportDesc">Türkiye genelinde servis ve bakım hizmeti.</p>
-            <a href="products.html" class="btn btn-primary btn-lg mt-4 animate__animated animate__pulse animate__infinite" data-i18n="hero.btnVisit">Ürünlerimizi Keşfedin <i class="fas fa-arrow-right ms-2"></i></a>
+          <div class="carousel-caption text-center">
+            <h2 class="animate__animated animate__fadeInDown" data-i18n="hero.supportTitle">Uzman Teknik Destek</h2>
+            <p class="animate__animated animate__fadeInUp" data-i18n="hero.supportDesc">Türkiye genelinde servis ve bakım hizmeti</p>
+            <a href="products.html" class="btn btn-outline-light btn-sm mt-4" data-i18n="hero.btnVisit">Ürünler <i class="fas fa-arrow-right ms-2"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Animate.css -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
-  
-  <!-- Hizmetlerimiz Bölümü (Güncellenmiş) -->
+  <!-- ========= HİZMETLERİMİZ ========= -->
   <section class="py-5 bg-light" id="services">
     <div class="container">
-      <!-- Başlık ve Alt Başlık -->
       <div class="text-center mb-5">
         <h2 data-i18n="services.title">Hizmetlerimiz</h2>
-        <p class="text-muted" data-i18n="services.subtitle">
-          Endüstriyel ihtiyaçlarınıza yönelik profesyonel çözümler
-        </p>
+        <p class="text-muted" data-i18n="services.subtitle">Endüstriyel ihtiyaçlarınıza yönelik profesyonel çözümler</p>
       </div>
 
-      <!-- Kartlar -->
-      <div class="row g-4 services-swiper swiper">
-        <!-- 1. Kart: Yıllık Periyodik Bakım -->
-        <div class="col-12 col-md-6 col-lg-4 swiper-slide">
+      <div class="row g-4">
+        <!-- 1. Kart -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0" data-aos="fade-up">
-            <img
-              alt="Yıllık Periyodik Bakım"
-              class="card-img-top rounded-top-4"
-              src="images/hizmet1.webp"
-            />
+            <img alt="Yıllık Periyodik Bakım" class="card-img-top rounded-top-4" src="images/hizmet1.webp" />
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-semibold" data-i18n="service.maintenance.title">
-                Yıllık Periyodik Bakım
-              </h5>
-              <p class="card-text text-muted" data-i18n="service.maintenance.desc">
-                Tesisinizde maksimum güvenlik ve verimlilik için kapsamlı yıllık bakım ve kontrol hizmetleri.
-              </p>
+              <h5 class="card-title fw-semibold" data-i18n="service.maintenance.title">Yıllık Periyodik Bakım</h5>
+              <p class="card-text text-muted" data-i18n="service.maintenance.desc">Tesisinizde maksimum güvenlik ve verimlilik için kapsamlı yıllık bakım ve kontrol hizmetleri.</p>
               <div class="mt-auto">
-                <a class="btn btn-outline-primary w-100" href="hizmet1.html">
-                  Devamını Oku
-                </a>
+                <a class="btn btn-outline-primary w-100" href="hizmet1.html" data-i18n="service.maintenance.button">Devamını Oku</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- 2. Kart: Brülör Kurulumu -->
-        <div class="col-12 col-md-6 col-lg-4 swiper-slide">
+        <!-- 2. Kart -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0" data-aos="fade-up" data-aos-delay="100">
-            <img
-              alt="Brülör Kurulumu"
-              class="card-img-top rounded-top-4"
-              src="images/hizmet2.webp"
-            />
+            <img alt="Brülör Kurulumu" class="card-img-top rounded-top-4" src="images/hizmet2.webp" />
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-semibold" data-i18n="service.installation.title">
-                Brülör Kurulumu
-              </h5>
-              <p class="card-text text-muted" data-i18n="service.installation.desc">
-                Yeni tesis kurulumları ve sistem entegrasyonları için uzman brülör montaj hizmetleri.
-              </p>
+              <h5 class="card-title fw-semibold" data-i18n="service.installation.title">Brülör Kurulumu</h5>
+              <p class="card-text text-muted" data-i18n="service.installation.desc">Yeni tesis kurulumları ve sistem entegrasyonları için uzman brülör montaj hizmetleri.</p>
               <div class="mt-auto">
-                <a class="btn btn-outline-primary w-100" href="hizmet2.html">
-                  Devamını Oku
-                </a>
+                <a class="btn btn-outline-primary w-100" href="hizmet2.html" data-i18n="service.installation.button">Devamını Oku</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- 3. Kart: Otomasyon Sistemleri -->
-        <div class="col-12 col-md-6 col-lg-4 swiper-slide">
+        <!-- 3. Kart -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0" data-aos="fade-up" data-aos-delay="200">
-            <img
-              alt="Otomasyon Sistemleri"
-              class="card-img-top rounded-top-4"
-              src="images/hizmet3.webp"
-            />
+            <img alt="Otomasyon Sistemleri" class="card-img-top rounded-top-4" src="images/hizmet3.webp" />
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-semibold" data-i18n="service.automation.title">
-                Otomasyon Sistemleri
-              </h5>
-              <p class="card-text text-muted" data-i18n="service.automation.desc">
-                SCADA, PLC ve uzaktan erişim destekli yakma kontrol otomasyon çözümleri.
-              </p>
+              <h5 class="card-title fw-semibold" data-i18n="service.automation.title">Otomasyon Sistemleri</h5>
+              <p class="card-text text-muted" data-i18n="service.automation.desc">SCADA, PLC ve uzaktan erişim destekli yakma kontrol otomasyon çözümleri.</p>
               <div class="mt-auto">
-                <a class="btn btn-outline-primary w-100" href="hizmet3.html">
-                  Devamını Oku
-                </a>
+                <a class="btn btn-outline-primary w-100" href="hizmet3.html" data-i18n="service.automation.button">Devamını Oku</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- 4. Kart: Enerji Verimliliği -->
-        <div class="col-12 col-md-6 col-lg-4 swiper-slide">
+        <!-- 4. Kart -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0" data-aos="fade-up" data-aos-delay="300">
-            <img
-              alt="Enerji Verimliliği"
-              class="card-img-top rounded-top-4"
-              src="images/hizmet4.webp"
-            />
+            <img alt="Enerji Verimliliği" class="card-img-top rounded-top-4" src="images/hizmet4.webp" />
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-semibold" data-i18n="service.energy.title">
-                Enerji Verimliliği
-              </h5>
-              <p class="card-text text-muted" data-i18n="service.energy.desc">
-                Sistemlerinizi analiz ederek enerji tasarrufu sağlayacak çözümler geliştiriyoruz.
-              </p>
+              <h5 class="card-title fw-semibold" data-i18n="service.energy.title">Enerji Verimliliği</h5>
+              <p class="card-text text-muted" data-i18n="service.energy.desc">Sistemlerinizi analiz ederek enerji tasarrufu sağlayacak çözümler geliştiriyoruz.</p>
               <div class="mt-auto">
-                <a class="btn btn-outline-primary w-100" href="hizmet4.html">
-                  Devamını Oku
-                </a>
+                <a class="btn btn-outline-primary w-100" href="hizmet4.html" data-i18n="service.energy.button">Devamını Oku</a>
               </div>
             </div>
           </div>
         </div>
-
-        <!-- 5. Kart: Yedek Parça Temini -->
-        <div class="col-12 col-md-6 col-lg-4 swiper-slide">
+        <!-- 5. Kart -->
+        <div class="col-12 col-md-6 col-lg-4">
           <div class="card h-100 shadow-sm rounded-4 border-0" data-aos="fade-up" data-aos-delay="400">
-            <img
-              alt="Yedek Parça Temini"
-              class="card-img-top rounded-top-4"
-              src="images/hizmet5.webp"
-            />
+            <img alt="Yedek Parça Temini" class="card-img-top rounded-top-4" src="images/hizmet5.webp" />
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-semibold" data-i18n="service.spares.title">
-                Yedek Parça Temini
-              </h5>
-              <p class="card-text text-muted" data-i18n="service.spares.desc">
-                Orijinal brülör yedek parçaları ile kesintisiz operasyon sağlıyoruz.
-              </p>
+              <h5 class="card-title fw-semibold" data-i18n="service.spares.title">Yedek Parça Temini</h5>
+              <p class="card-text text-muted" data-i18n="service.spares.desc">Orijinal brülör yedek parçaları ile kesintisiz operasyon sağlıyoruz.</p>
               <div class="mt-auto">
-                <a class="btn btn-outline-primary w-100" href="hizmet5.html">
-                  Devamını Oku
-                </a>
+                <a class="btn btn-outline-primary w-100" href="hizmet5.html" data-i18n="service.spares.button">Devamını Oku</a>
               </div>
             </div>
           </div>
         </div>
       </div> <!-- /.row -->
-
-      <!-- Eğer Swiper.js kullanıyorsan, swiper-container başlatma kodu -->
-      <div class="d-flex justify-content-center mt-4">
-        <div class="swiper-pagination"></div>
-      </div>
     </div> <!-- /.container -->
   </section>
 
-  <!-- FOOTER -->
+  <!-- ========= FOOTER ========= -->
   <footer class="bg-dark text-light text-center py-3 mt-5">
     <div class="container">
       <p class="mb-0"><span data-i18n="footer.copy">© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır.</span></p>
     </div>
   </footer>
+  <!-- ========= /FOOTER ========= -->
 
-  <!-- Bootstrap JS -->
+  <!-- ========= JS ========= -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <script>
-    AOS.init({ once: true });
-  </script>
-
-  <!-- i18next JS ve dinleyiciler -->
-  <script>
-    i18next
-      .use(i18nextHttpBackend)
-      .use(i18nextBrowserLanguageDetector)
-      .init({
-        debug: false,
-        fallbackLng: 'tr',
-        backend: { loadPath: 'locales/{{lng}}.json' }
-      }, function(err, t) {
-        updateContent();
-      });
-
-    function updateContent() {
-      document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        el.innerHTML = i18next.t(key);
-      });
-    }
-
-    i18next.on('languageChanged', () => updateContent());
-    document.getElementById('btn-tr').addEventListener('click', () => i18next.changeLanguage('tr'));
-    document.getElementById('btn-en').addEventListener('click', () => i18next.changeLanguage('en'));
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper('.services-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        992: { slidesPerView: 3 },
-      },
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
-    });
-  </script>
+  <script>AOS.init({ once: true });</script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

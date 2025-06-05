@@ -5,15 +5,13 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "products": "Ürünler",
-    "contact": "İletişim"
-  },
-  "btn": {
-    "whatsapp": "WhatsApp",
-    "quote": "Teklif Al"
+    "contact": "İletişim",
+    "faq": "SSS"
   },
   "hero": {
     "title": "Endüstriyel Brülör Sistemlerinde Uzman Hizmet",
-    "subtitle": "Türkiye genelinde güvenilir kurulum, bakım ve yedek parça hizmeti"
+    "subtitle": "Türkiye genelinde güvenilir kurulum, bakım ve yedek parça hizmeti",
+    "btnVisit": "Keşfet"
   },
   "services": {
     "title": "Hizmetlerimiz",
@@ -22,26 +20,139 @@
   "service": {
     "maintenance": {
       "title": "Yıllık Periyodik Bakım",
-      "desc": "Tesisinizde maksimum güvenlik ve verimlilik için kapsamlı yıllık bakım ve kontrol hizmetleri."
+      "desc": "Tesisinizde maksimum güvenlik ve verimlilik için kapsamlı yıllık bakım ve kontrol hizmetleri.",
+      "button": "Devamını Oku"
     },
     "installation": {
       "title": "Brülör Kurulumu",
-      "desc": "Yeni tesis kurulumları ve sistem entegrasyonları için uzman brülör montaj hizmetleri."
+      "desc": "Yeni tesis kurulumları ve sistem entegrasyonları için uzman brülör montaj hizmetleri.",
+      "button": "Devamını Oku"
     },
     "automation": {
       "title": "Otomasyon Sistemleri",
-      "desc": "SCADA, PLC ve uzaktan erişim destekli yakma kontrol otomasyon çözümleri."
+      "desc": "SCADA, PLC ve uzaktan erişim destekli yakma kontrol otomasyon çözümleri.",
+      "button": "Devamını Oku"
     },
     "energy": {
       "title": "Enerji Verimliliği",
-      "desc": "Sistemlerinizi analiz ederek enerji tasarrufu sağlayacak çözümler geliştiriyoruz."
+      "desc": "Sistemlerinizi analiz ederek enerji tasarrufu sağlayacak çözümler geliştiriyoruz.",
+      "button": "Devamını Oku"
     },
     "spares": {
       "title": "Yedek Parça Temini",
-      "desc": "Orijinal brülör yedek parçaları ile kesintisiz operasyon sağlıyoruz."
+      "desc": "Orijinal brülör yedek parçaları ile kesintisiz operasyon sağlıyoruz.",
+      "button": "Devamını Oku"
     }
+  },
+  "about": {
+    "title": "Hakkımızda – NASA Teknik Hizmetler",
+    "heading": "Hakkımızda",
+    "text": "NASA Teknik Hizmetler, endüstriyel brülör sistemleri konusunda uzmanlaşmış bir mühendislik firmasıdır. Türkiye genelinde kurulum, bakım ve servis hizmetleri sunar.",
+    "who": "Biz Kimiz?",
+    "whoDesc": "NASA Teknik Hizmetler, sektörde yılların deneyimine sahip mühendis kadrosuyla yüksek kaliteli çözümler sunar. Müşteri memnuniyetini ve hızlı müdahaleyi ön planda tutuyoruz.",
+    "vision": "Vizyonumuz",
+    "visionDesc": "Endüstriyel brülör sistemlerinde lider, yenilikçi ve güvenilir bir çözüm ortağı olmak.",
+    "mission": "Misyonumuz",
+    "missionDesc": "En yeni teknolojileri kullanarak verimli, çevre dostu ve sürdürülebilir hizmetler sunmak."
   },
   "footer": {
     "copy": "© 2025 NASA Teknik Hizmetler. Tüm hakları saklıdır."
+  },
+  "btn": {
+    "whatsapp": "WhatsApp",
+    "quote": "Teklif Al"
+ 
+
+  },
+  
+  
+  "products": {
+    "pageTitle": "Ürünlerimiz | NASA Teknik Hizmetler",
+    "heroTitle": "Ürünlerimiz",
+    "heroSubtitle": "Endüstriyel brülörler ve tamamlayıcı parçalar: kalite ve performansın adresi",
+    "section1Title": "Brülör Tipleri",
+    "section2Title": "Diğer Parçalar"
+  },
+  "product1": {
+    "name": "Monoblok Brülör",
+    "desc": "Kompakt ve tüm bileşenler tek gövdede.",
+    "button": "Detaylı Bilgi"
+  },
+  "product2": {
+    "name": "Duoblok Brülör",
+    "desc": "Modüler yapı, yüksek kapasite ve verimli yanma kontrolü.",
+    "button": "Detaylı Bilgi"
+  },
+  "product5": {
+    "name": "Emniyet Kapama Valfi",
+    "desc": "Acil durumda gaz akışını kesen güvenlik valfi.",
+    "button": "Detaylı Bilgi"
+  },
+  "product7": {
+    "name": "Filtre Ünitesi",
+    "desc": "Brülöre giren havayı partiküllerden arındıran, modüler yapı ve kolay bakım.",
+    "button": "Detaylı Bilgi"
+  },
+  "product8": {
+    "name": "Gaz Basınç Regülatörü",
+    "desc": "Gaz basıncını istenen seviyede sabitleyen, yüksek hassasiyetli regülatör.",
+    "button": "Detaylı Bilgi"
+  },
+  "product9": {
+    "name": "Yanma Analizörü",
+    "desc": "O₂/CO oranını ölçerek yanma verimliliğini optimize eden dijital gösterge.",
+    "button": "Detaylı Bilgi"
+  },
+  "product10": {
+    "name": "Valf Aktüatörü",
+    "desc": "Elektrik motorlu veya pnömatik tahrikli valf hareket ettirici, uzaktan kumanda özelliği.",
+    "button": "Detaylı Bilgi"
+  },
+  "product11": {
+    "name": "ProsesStat Draft Regülatörü",
+    "desc": "Baca çekişi ve basınç kontrolü sağlayan yüksek performanslı regülatör cihazı.",
+    "button": "Detaylı Bilgi"
+  }, "contact": {
+    "title": "Teklif Al - NASA Teknik Hizmetler",
+    "heading": "Teklif Al",
+    "subheading": "Teklif talebinde bulunmak için lütfen formu eksiksiz doldurun.",
+    "form": {
+      "companyLabel": "Firma Adı",
+      "companyPlaceholder": "Firma Adınızı Girin",
+      "companyInvalid": "Firma adı gerekli.",
+      "nameLabel": "Ad Soyad",
+      "namePlaceholder": "Adınız Soyadınız",
+      "nameInvalid": "Ad Soyad gerekli.",
+      "emailLabel": "E-posta",
+      "emailPlaceholder": "email@ornek.com",
+      "emailInvalid": "Geçerli bir e-posta giriniz.",
+      "phoneLabel": "Telefon",
+      "phonePlaceholder": "0531 625 0694",
+      "phoneInvalid": "Telefon numarası gerekli.",
+      "addressLabel": "Adres",
+      "addressPlaceholder": "Adresinizi girin",
+      "addressInvalid": "Adres gerekli.",
+      "messageLabel": "Teklif İçeriği / Mesajınız",
+      "messagePlaceholder": "Teklif detaylarınızı girin",
+      "messageInvalid": "Mesaj alanı boş bırakılamaz.",
+      "submitButton": "Teklif Al",
+      "submitSuccess": "✅ Mesajınız başarıyla iletildi!",
+      "submitError": "⚠️ Mesaj gönderilemedi. Lütfen tekrar deneyin.",
+      "submitConnError": "🚫 Bağlantı hatası! Lütfen internetinizi kontrol edin."
+    },
+    "info": {
+      "heading": "Şirket Bilgileri",
+      "companyLabel": "Firma:",
+      "companyName": "NASA Teknik Hizmetler",
+      "phoneLabel": "Telefon:",
+      "phoneValue": "0531 625 0694",
+      "whatsappLabel": "WhatsApp:",
+      "whatsappValue": "0531 625 0694",
+      "emailLabel": "E-posta:",
+      "emailValue": "adiguzelhuseyin@outlook.com",
+      "addressHeading": "Adresimiz",
+      "addressValue": "Kağıthane, İstanbul, Türkiye"
+    }
   }
 }
+

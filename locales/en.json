@@ -1,11 +1,18 @@
-
 {
-  "siteTitle": "NASA Technical Services",
-  "aboutTitle": "About Us",
-  "contactTitle": "Contact",
-  "faqTitle": "Frequently Asked Questions",
-  
-
+  "siteTitle": "NASA Technical Services | Industrial Burner Systems",
+  "brand": "NASA Technical",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Expert Service in Industrial Burner Systems",
+    "subtitle": "Reliable installation, maintenance, and spare parts across Turkey",
+    "btnVisit": "Explore"
+  },
   "services": {
     "title": "Our Services",
     "subtitle": "Professional solutions for your industrial needs"
@@ -13,23 +20,164 @@
   "service": {
     "maintenance": {
       "title": "Annual Periodic Maintenance",
-      "desc": "We offer comprehensive annual maintenance and inspection services to ensure maximum safety and efficiency in your facility."
+      "desc": "Comprehensive annual maintenance and inspection services for maximum safety and efficiency.",
+      "button": "Read More"
     },
     "installation": {
       "title": "Burner Installation",
-      "desc": "Expert burner installation services for new facilities and seamless system integration."
+      "desc": "Expert burner installation services for new facility setups and system integrations.",
+      "button": "Read More"
     },
     "automation": {
       "title": "Automation Systems",
-      "desc": "SCADA, PLC, and remote-access enabled combustion control automation solutions."
+      "desc": "SCADA, PLC, and remote access supported combustion control automation solutions.",
+      "button": "Read More"
     },
     "energy": {
       "title": "Energy Efficiency",
-      "desc": "We analyze your systems to develop solutions that help you save energy."
+      "desc": "Developing solutions that save energy by analyzing your systems.",
+      "button": "Read More"
     },
     "spares": {
       "title": "Spare Parts Supply",
-      "desc": "We provide original burner spare parts to keep your operations uninterrupted."
+      "desc": "Ensuring uninterrupted operation with original burner spare parts.",
+      "button": "Read More"
+    }
+  },
+  "about": {
+    "title": "About – NASA Technical Services",
+    "heading": "About Us",
+    "text": "NASA Technical Services is an engineering firm specializing in industrial burner systems. We provide installation, maintenance, and service solutions all over Turkey.",
+    "who": "Who We Are?",
+    "whoDesc": "NASA Technical Services delivers high-quality solutions with an engineering team that has years of industry experience. We prioritize customer satisfaction and rapid response.",
+    "vision": "Our Vision",
+    "visionDesc": "To be a leading, innovative, and reliable solutions partner in industrial burner systems.",
+    "mission": "Our Mission",
+    "missionDesc": "To provide efficient, eco-friendly, and sustainable services by utilizing the latest technologies."
+  },
+  "footer": {
+    "copy": "© 2025 NASA Technical Services. All rights reserved."
+  },
+  "btn": {
+    "whatsapp": "WhatsApp",
+    "quote": "Get a Quote"
+  },
+  "products": {
+    "pageTitle": "Our Products | NASA Technical Services",
+    "heroTitle": "Our Products",
+    "heroSubtitle": "Industrial burners & complementary parts: where quality meets performance",
+    "section1Title": "Burner Types",
+    "section2Title": "Other Components"
+  },
+  "product1": {
+    "name": "Monoblock Burner",
+    "desc": "Compact design with all components in a single housing.",
+    "button": "Learn More"
+  },
+  "product2": {
+    "name": "Duoblock Burner",
+    "desc": "Modular build, high capacity, and efficient combustion control.",
+    "button": "Learn More"
+  },
+  "product5": {
+    "name": "Safety Shut-Off Valve",
+    "desc": "Emergency valve that cuts off gas flow in critical situations.",
+    "button": "Learn More"
+  },
+  "product7": {
+    "name": "Filter Unit",
+    "desc": "Removes particles from incoming air, modular design, easy maintenance.",
+    "button": "Learn More"
+  },
+  "product8": {
+    "name": "Gas Pressure Regulator",
+    "desc": "High-precision regulator that stabilizes gas pressure at the desired level.",
+    "button": "Learn More"
+  },
+  "product9": {
+    "name": "Combustion Analyzer",
+    "desc": "Digital indicator that measures O₂/CO ratio to optimize combustion efficiency.",
+    "button": "Learn More"
+  },
+  "product10": {
+    "name": "Valve Actuator",
+    "desc": "Electric or pneumatic-driven valve actuator with remote control capability.",
+    "button": "Learn More"
+  },
+  "product11": {
+    "name": "ProsesStat Draft Regulator",
+    "desc": "High-performance regulator device for chimney draft and pressure control.",
+    "button": "Learn More"
+  },
+    "contact": {
+    "title": "Get a Quote - NASA Technical Services",
+    "heading": "Get a Quote",
+    "subheading": "Please fill out the form completely to request a quote.",
+    "form": {
+      "companyLabel": "Company Name",
+      "companyPlaceholder": "Enter your company name",
+      "companyInvalid": "Company name is required.",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "nameInvalid": "Full name is required.",
+      "emailLabel": "Email",
+      "emailPlaceholder": "email@example.com",
+      "emailInvalid": "Please enter a valid email.",
+      "phoneLabel": "Phone",
+      "phonePlaceholder": "+90 531 625 0694",
+      "phoneInvalid": "Phone number is required.",
+      "addressLabel": "Address",
+      "addressPlaceholder": "Enter your address",
+      "addressInvalid": "Address is required.",
+      "messageLabel": "Quote Details / Your Message",
+      "messagePlaceholder": "Enter your quote details",
+      "messageInvalid": "Message cannot be empty.",
+      "submitButton": "Get a Quote",
+      "submitSuccess": "✅ Your message has been sent successfully!",
+      "submitError": "⚠️ Message could not be sent. Please try again.",
+      "submitConnError": "🚫 Connection error! Please check your internet."
+    },
+    "info": {
+      "heading": "Company Information",
+      "companyLabel": "Company:",
+      "companyName": "NASA Technical Services",
+      "phoneLabel": "Phone:",
+      "phoneValue": "+90 531 625 0694",
+      "whatsappLabel": "WhatsApp:",
+      "whatsappValue": "+90 531 625 0694",
+      "emailLabel": "Email:",
+      "emailValue": "adiguzelhuseyin@outlook.com",
+      "addressHeading": "Our Address",
+      "addressValue": "Kağıthane, Istanbul, Turkey"
+    }
+  },
+  
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Answers to common questions about our burner systems and services.",
+    "q1": {
+      "question": "How often should I service my burner?",
+      "answer": "We recommend annual maintenance to keep your burner performing optimally. In heavy usage scenarios, semi-annual check-ups can be scheduled."
+    },
+    "q2": {
+      "question": "How do I create a service request?",
+      "answer": "You can fill out the 'Contact' form on our website or send us your request via our 24/7 WhatsApp line. You will receive a swift response."
+    },
+    "q3": {
+      "question": "What should I do in case of an emergency breakdown?",
+      "answer": "Mark your request as urgent or call +90 531 625 06 94. Our field team will respond as soon as possible."
+    },
+    "q4": {
+      "question": "Which regions do you serve?",
+      "answer": "We serve all over Turkey. We offer rapid field support in Istanbul, Ankara, Izmir, and their surrounding areas."
+    },
+    "q5": {
+      "question": "How can I request a price quote?",
+      "answer": "Click the 'Get a Quote' button and share your requirements. We will send you a detailed quote within 24 hours."
+    },
+    "q6": {
+      "question": "Do you provide training or user education?",
+      "answer": "Yes, we offer certified training services for burner operation and maintenance. Contact us for schedule and curriculum details."
     }
   }
 }

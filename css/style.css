@@ -341,3 +341,32 @@ img, picture, source {
   display: block;
   object-fit: cover;
 }
+/* Hero Slider Üzerindeki Sabit Çağrı Butonu */
+#hero {
+  position: relative;
+}
+.hero-cta-container {
+  position: absolute;
+  top: 50%;             /* Dikey olarak %50’ye getir */
+  left: 50%;            /* Yatay olarak %50’ye getir */
+  transform: translate(-50%, -50%);
+  z-index: 10;          /* Slider öğelerinin üstünde kalması için */
+  width: 100%;
+  text-align: center;
+}
+.hero-cta-container .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* Mobilde butonun biraz daha aşağıda görünmesi için opsiyonel */
+@media (max-width: 768px) {
+  .hero-cta-container {
+    top: 60%;
+  }
+  .hero-cta-container .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}

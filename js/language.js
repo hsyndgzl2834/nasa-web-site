@@ -1,27 +1,57 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const elements = document.querySelectorAll("[data-i18n]");
-  const langButtons = document.querySelectorAll(".lang-btn");
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.lang-btn');
+  let translations = {};
 
-  function setLanguage(lang) {
-    fetch("js/lang.json")
-      .then(res => res.json())
-      .then(data => {
-        elements.forEach(el => {
-          const key = el.getAttribute("data-i18n");
-          if (data[lang] && data[lang][key]) {
-            el.innerHTML = data[lang][key];
-          }
-        });
-        localStorage.setItem("language", lang);
-      });
-  }
+  // Seçili dili localStorage'dan oku; yoksa "tr" kullan
+  const storedLang = localStorage.getItem('selectedLang') || 'tr';
 
-  const savedLang = localStorage.getItem("language") || "tr";
-  setLanguage(savedLang);
+  // Dil butonlarına tıklanınca:
+  buttons.forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const lang = btn.getAttribute('data-lang');
 
-  langButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      setLanguage(btn.dataset.lang);
+      // Seçimi localStorage'a kaydet
+      localStorage.setItem('selectedLang', lang);
+
+      // JSON'u yükleyip çeviriyi uygula
+      try {
+        const res = await fetch(`locales/${lang}.json`);
+        if (!res.ok) {
+          throw new Error(`Çeviri dosyası yüklenemedi: locales/${lang}.json (status ${res.status})`);
+        }
+        translations = await res.json();
+        applyTranslations(translations);
+      } catch (err) {
+        console.error('Çeviri dosyası yüklenirken hata:', err);
+      }
     });
   });
+
+  function applyTranslations(obj, parentKey = '') {
+    for (const key in obj) {
+      const fullKey = parentKey ? `${parentKey}.${key}` : key;
+      if (typeof obj[key] === 'string') {
+        document.querySelectorAll(`[data-i18n="${fullKey}"]`).forEach(el => {
+          el.textContent = obj[key];
+        });
+      } else {
+        applyTranslations(obj[key], fullKey);
+      }
+    }
+  }
+
+  // Sayfa yüklendiğinde storedLang değerine göre çeviriyi uygula
+  // (Buton tıklaması simülasyonuna gerek yok)
+  (async () => {
+    try {
+      const res = await fetch(`locales/${storedLang}.json`);
+      if (!res.ok) {
+        throw new Error(`Çeviri dosyası yüklenemedi: locales/${storedLang}.json (status ${res.status})`);
+      }
+      translations = await res.json();
+      applyTranslations(translations);
+    } catch (err) {
+      console.error('Çeviri dosyası yüklenirken hata:', err);
+    }
+  })();
 });
